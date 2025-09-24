@@ -1,0 +1,221 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed ;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed ;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: "Work Sans", sans-serif;
+}
+
+.floating-bar {
+  position: fixed;
+  top: 20;
+  width: 90%;
+  height: 80px;
+  min-height: 60px;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0px 0px rgba(255, 255, 255, 0);
+  border-radius: 1rem;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.btn-primary {
+  background-image: linear-gradient(to right, #338BDE 0%, #58b0d8  51%, #338BDE  100%)
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.btn-gold {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #faf9f6;            
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #bf953f 0%, #e7e1a4  50%, #bf953f  100%)
+}
+
+.btn-upgrade {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #faf9f6;            
+  border-radius: 10px;
+  display: block;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #2b2a29 0%, #aeaead  50%, #2b2a29  100%)
+}
+
+.btn-label {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 40px;
+  background-image: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #97822d;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+  transition-duration: 3s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+  background-size: 200% 200%;
+  text-decoration: none;
+}
+
+
+.btn-primary:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-gold:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-upgrade:hover {
+  background-position: right center; 
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-primary {
+  color: #189BED;
+  background-image: linear-gradient(45deg, #189BED 35%, #FFFFFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.circle {
+  width: 100px;          
+  height: 100px;         
+  background-color: #ffffff;
+  border-radius: 50%;    
+  display: flex;         
+  justify-content: center; 
+  align-items: center; 
+  color: #189BED;
+  font-size: 4rem;
+}
+
+.testimonial {
+	background: #15151500;
+  width: 350px;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0px 0px rgba(255, 255, 255, 0);
+	border-radius: 1rem;
+	padding: 2rem 1.5rem;
+  min-height: 200px;
+  height: 200px;
+}
+
+.text-gold {
+  color: #A68E2D;
+  background-image: linear-gradient(315deg, #A68E2D 37%, #FFFFFF 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.card {
+  width: 350px;
+  overflow: hidden;
+  padding: 2rem;
+	border-radius: 1rem;
+  background: #15151500;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0px 0px rgba(255, 255, 255, 0);
+}
+
+
+footer.footer {  
+  color: white;            
+  padding: 2rem 2.5rem;         
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  margin-top: 1rem;
+  background: #15151500;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 0px 0px rgba(255, 255, 255, 0);
+}
+
+.unit-menu:hover {
+  color: #189BED;
+  background-image: linear-gradient(45deg, #189BED 35%, #FFFFFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+         
