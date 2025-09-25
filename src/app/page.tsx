@@ -15,7 +15,7 @@ export default function Home() {
                 <h2 className="text-3xl md:text-6xl text-primary mb-2">Untuk Mendapatkan Keuntungan Ratusan Persen</h2>
                 <h3>Member Stockwise berhasil mengalahkan IHSG sampai <span className="text-primary">67x lipat</span> di tahun 2023</h3>
               </div>
-              <div className="self-center flex-1/3 justify-items-center">
+              <div className="self-center flex-auto justify-items-center flex-">
                 <iframe  
                   className="w-[300px] h-[200px] md:w-[700px] md:h-[400px] xl:w-[500px] xl:h-[300px]"
                   title="Stockwise"
